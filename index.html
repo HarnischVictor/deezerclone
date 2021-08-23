@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <title>Webapp Deezer</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+
+
+<body>
+<div class="sidebar">
+    <div class="sidebar-wrapper">
+        <div class="sidebar__logo">
+            <img src="_img/logo.png"/>
+        </div>
+        <!--/*sidebar--logo*/-->
+
+        <div class="sidebar__menu">
+            <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-music"></i> Músicas</a>
+            <a href="#"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#"><i class="fas fa-search"></i> Buscar</a>
+            <a href="#"><i class="fas fa-database"></i> Biblioteca</a>
+        </div>
+        <!--sidebar--menu-->
+        <div class="sidebar__menu">
+            <p class="sidebar__menu__title">Playlist</p>
+
+            <div class="sidebar__menu__item">
+                <div class="sidebar__menu__item__componente">
+                    <span>+</span>
+                </div>
+                <span>Criar Playlist</span>
+            </div><!--sidebar--menu-item-->
+
+            <!--musicas curtidas-->
+            <div class="sidebar__menu__item">
+                <img src="_img/list_curtidas.png"/>
+                <span>Músicas Curtidas</span>
+            </div><!--musicas curtidas-->
+
+            <div class="sidebar__playlists"><!-- listas de musicas-->
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 2</a>
+                <a href="">Playlist 3</a>
+                <a href="">Playlist 4</a>
+
+            </div>
+
+            <div class="sidebar__playlists"><!-- listas de musicas-->
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 2</a>
+                <a href="">Playlist 3</a>
+                <a href="">Playlist 4</a>
+
+            </div>
+
+
+
+
+        </div><!--sidebar--menu-->
+    </div><!--sidebar-wrapper-->
+
+</div><!--sidebar-->
+
+
+<div>
+    <div class="main">
+        <div class="main-wrapper">
+            <div class="main__row">
+                <div class="main__row__title"><h2>Paradas</h2>
+                </div>
+
+                <div class="main__col">
+                    <img src="_img/flow.png"/>
+                    <h3>Aleatórias</h3>
+                    <p>Um mix infinito de favoritos e faixas novas</p>
+                </div>
+
+                <div class="main__col">
+                    <img src="_img/Lançamentos.png"/>
+                    <h3>Lançamentos de Sexta</h3>
+                    <p>Destacando Pitbull, Tina Turner, Sodom, Lobão</p>
+                </div>
+
+                <div class="main__col">
+                    <img src="_img/daily.png"/>
+                    <h3>Daily</h3>
+                    <p>Destacando Legião Urbana, Os Paralamas do Sucesso, Titãs, Nenhum De Nós</p>
+                </div>
+
+                <div class="main__col">
+                    <img src="_img/daily1.png"/>
+                    <h3>Daily</h3>
+                    <p>Destacando Asking Alexandria, The Amity Affliction, I Prevail, Bad Omens</p>
+                </div>
+
+                <div class="main__col">
+                    <img src="_img/daily2.png"/>
+                    <h3>Daily</h3>
+                    <p>Destacando In Flames, Children of Bodom, Soilwork, Be'Lakor</p>
+                </div>
+            </div>
+            <!--segunda linha-->
+            <div class="main__row">
+                <div class="main__row__title"><h2>Minhas Músicas</h2>
+                </div>
+
+                <div class="main__col" data-image="img/this-is-manace.png" data-artist="This is Manace" data-song="this-is-menace-avenue-of-heroes" data-file="assets/music.mp3" >
+                    <img src="_img/this-is-manace.png"/>
+                    <h3>this-is-Manace</h3>
+                    <p>Trading Yesterday</p>
+                </div>
+
+                <div class="main__col" data-image="img/Killswitch.png" data-artist="Killswitch Engage" data-song="15. Holy Diver (Live) (Bonus Tracks)" data-file="assets/music.mp3">
+                    <img src="_img/Killswitch.png"/>
+                    <h3>Killswitch Engage</h3>
+                    <p>Holly Diver</p>
+                </div>
+
+
+            </div> <!--fim-->
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="player">
+    <div class="player__artist">
+
+    </div>
+
+    <div class="player__control">
+        <div class="Player__control__buttons">
+            <a href=""><i class="fas fa-backward"></i></a>
+            <a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i> </a>
+            <a id="playBtn" href="#"><i class="far fa-play-circle"></i> </a>
+            <a href=""><i class="fas fa-forward"></i> </a>
+        </div>
+        <div class="player__control__progress">
+
+        </div>
+    </div>
+</div> <!--player-->
+<audio id="audioplayer" style="position: absolute;left: 0;
+top: 0; z-index: -999; opacity: 0;" controls="">
+
+</audio>
+<script src="_js/all.min.js"></script>
+<script src="_js/player.js"></script>
+
+<script>
+
+
+
+</script>
+
+
+</body>
+
+</html>
